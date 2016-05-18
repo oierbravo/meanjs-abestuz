@@ -18,10 +18,10 @@
      $translateProvider.preferredLanguage('eu');
      $translateProvider.useSanitizeValueStrategy('escape');
 
-$translateProvider.useStaticFilesLoader({
-  prefix: '/languages/',
-  suffix: '.json'
-});
+$translateProvider.registerAvailableLanguageKeys(['es','eu'], {
+    'en_US': 'en',
+    'en_UK': 'en'
+  })
  
   }
 })();

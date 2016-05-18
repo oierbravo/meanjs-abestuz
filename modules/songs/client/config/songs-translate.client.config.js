@@ -26,6 +26,20 @@
       'EDIT_SONG': 'Abestia editatu'
       
     });
+      $translateProvider.translations('es', {
+      'SONGS': 'Canciones',
+      'LIST_SONGS': 'Lista de canciones',
+      'CREATE_SONG': 'Nueva cancion',
+      'NAME': 'Nombre',
+      'ARTIST': 'Artista',
+      'LYRICS' : 'Letra',
+      'CHORDS': 'Acordes',
+      'CREATE': 'Guardar',
+      'UPDATE': 'Actualizar',
+      'NEW_SONG': 'Nueva cancion',
+      'EDIT_SONG': 'Editar cancion'
+      
+    });
   //   $translateProvider.preferredLanguage('en');
   }
 })();
