@@ -17,7 +17,10 @@
     vm.form = {};
     vm.remove = remove;
     vm.save = save;
-
+    
+    $scope.openPrinter = function(){
+        window.print();
+      }
     // Remove existing Song
     function remove() {
       if (confirm('Are you sure you want to delete?')) {
@@ -48,6 +51,8 @@
       function errorCallback(res) {
         vm.error = res.data.message;
       }
+
+
     }
   }
 })();
