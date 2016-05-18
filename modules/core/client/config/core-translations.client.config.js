@@ -17,5 +17,11 @@
     });
      $translateProvider.preferredLanguage('eu');
      $translateProvider.useSanitizeValueStrategy('escape');
+
+$translateProvider.useStaticFilesLoader({
+  prefix: '/languages/',
+  suffix: '.json'
+});
+ 
   }
 })();

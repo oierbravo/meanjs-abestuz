@@ -20,6 +20,9 @@ module.exports = {
         'public/lib/angular-file-upload/dist/angular-file-upload.js',
         'public/lib/owasp-password-strength-test/owasp-password-strength-test.js',
         'public/lib/angular-translate/angular-translate.js',
+        'public/lib/angular-translate-loader-static/angular-translate-loader-static.js',
+        'public/lib/angular-elastic/elastic.js',
+        'public/lib/ng-youtube-embed/build/ng-youtube-embed.min.js'
         // endbower
       ],
       tests: ['public/lib/angular-mocks/angular-mocks.js']

@@ -13,9 +13,17 @@
     // ...
    // console.log($translateProvider);
      $translateProvider.translations('eu', {
-            'Songs': 'Abestiak',
-      'List Songs': 'Abesti zerrenda',
-      'Create Song': 'Abesti berria'
+      'SONGS': 'Abestiak',
+      'LIST_SONGS': 'Abesti zerrenda',
+      'CREATE_SONG': 'Abesti berria',
+      'NAME': 'Izena',
+      'ARTIST': 'Artista',
+      'LYRICS' : 'Letra',
+      'CHORDS': 'Akordeak',
+      'CREATE': 'Gorde',
+      'UPDATE': 'Eguneratu',
+      'NEW_SONG': 'Abesti berria',
+      'EDIT_SONG': 'Abestia editatu'
       
     });
   //   $translateProvider.preferredLanguage('en');

@@ -31,6 +31,11 @@ var SongSchema = new Schema({
     default: ''
    
   },
+  video: {
+    type: String,
+    default: ''
+   
+  },
   created: {
     type: Date,
     default: Date.now

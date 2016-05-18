@@ -10,7 +10,7 @@
   function menuConfig(Menus) {
     // Set top bar menu items
     Menus.addMenuItem('topbar', {
-      title: 'Songs',
+      title: 'SONGS',
       state: 'songs',
       type: 'dropdown',
       roles: ['*']
@@ -18,13 +18,13 @@
 
     // Add the dropdown list item
     Menus.addSubMenuItem('topbar', 'songs', {
-      title: 'List Songs',
+      title: 'LIST_SONGS',
       state: 'songs.list'
     });
 
     // Add the dropdown create item
     Menus.addSubMenuItem('topbar', 'songs', {
-      title: 'Create Song',
+      title: 'CREATE_SONG',
       state: 'songs.create',
       roles: ['user']
     });
