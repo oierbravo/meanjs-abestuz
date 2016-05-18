@@ -1,0 +1,22 @@
+<section>
+  <div class="page-header">
+    <h1>{{'Songs' | translate}}</h1>
+  </div>
+  <div class="list-group">
+    <a data-ng-repeat="song in vm.songs"
+       data-ui-sref="songs.view({ songId: song._id })"
+       class="list-group-item">
+      <small class="list-group-item-text">
+        Posted on
+        <span data-ng-bind="song.created | date:'mediumDate'"></span>
+        by
+        <span data-ng-if="song.user" data-ng-bind="song.user.displayName"></span>
+        <span data-ng-if="!song.user">{{'Deleted User' | translate}}</span>
+      </small>
+      <h4 class="list-group-item-heading" data-ng-bind="song.name"></h4>
+    </a>
+  </div>
+  <div class="alert alert-warning text-center" data-ng-if="vm.songs.$resolved && !vm.songs.length">
+    No Songs yet, why don't you <a data-ui-sref="songs.create">create one</a>?
+  </div>
+</section>

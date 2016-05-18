@@ -1,0 +1,28 @@
+<section>
+  <div class="page-header">
+    <h1>{{vm.song.name}}<small> {{vm.song.artist}}</small></h1>
+  </div>
+  <div class="pull-right"
+       data-ng-show="vm.song.isCurrentUserOwner">
+    <a class="btn btn-primary"
+       data-ui-sref="songs.edit({ songId: vm.song._id })">
+      <i class="glyphicon glyphicon-edit"></i>
+    </a>
+    <a class="btn btn-primary" data-ng-click="vm.remove()">
+      <i class="glyphicon glyphicon-trash"></i>
+    </a>
+  </div>
+ <p class="text-success" data-ng-bind="vm.song.chords"></p>
+ <p  data-ng-bind="vm.song.lyrics"></p>
+  <small>
+    <em class="text-muted">
+      Posted on
+      <span data-ng-bind="vm.song.created | date:'mediumDate'"></span>
+      by
+      <span data-ng-if="vm.song.user"
+            data-ng-bind="vm.song.user.displayName"></span>
+      <span data-ng-if="!vm.song.user">Deleted User</span>
+    </em>
+  </small>
+  <p class="lead" data-ng-bind="vm.song.content"></p>
+</section>

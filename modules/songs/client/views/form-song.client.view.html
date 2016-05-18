@@ -1,0 +1,34 @@
+<section>
+  <div class="page-header">
+    <h1>{{vm.song._id ? 'Edit Song' : 'New Song'}}</h1>
+  </div>
+  <div class="col-md-12">
+    <form name="vm.form.songForm" class="form-horizontal" ng-submit="vm.save(vm.form.songForm.$valid)" novalidate>
+      <fieldset>
+        <div class="form-group" show-errors>
+          <label class="control-label" for="name">Name</label>
+          <input name="name" type="text" ng-model="vm.song.name" id="name" class="form-control" placeholder="Name" required>
+
+          <label class="control-label" for="artist">Artist</label>
+          <input name="artist" type="text" ng-model="vm.song.artist" id="artist" class="form-control" placeholder="Artist">
+
+          <label class="control-label" for="lyrics">Lyrics</label>
+          <textarea name="lyrics" ng-model="vm.song.lyrics" id="lyrics" class="form-control"></textarea>
+
+          <label class="control-label" for="chords">Chords</label>
+          <input name="chords" type="text" ng-model="vm.song.chords" id="chords" class="form-control" >
+
+          <div ng-messages="vm.form.songForm.name.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Song name is required.</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">{{vm.song._id ? 'Update' : 'Create'}}</button>
+        </div>
+        <div ng-show="vm.error" class="text-danger">
+          <strong ng-bind="vm.error"></strong>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>
