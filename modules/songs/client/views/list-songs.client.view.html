@@ -6,13 +6,7 @@
     <a data-ng-repeat="song in vm.songs"
        data-ui-sref="songs.view({ songId: song._id })"
        class="list-group-item">
-      <small class="list-group-item-text">
-        Posted on
-        <span data-ng-bind="song.created | date:'mediumDate'"></span>
-        by
-        <span data-ng-if="song.user" data-ng-bind="song.user.displayName"></span>
-        <span data-ng-if="!song.user">{{'Deleted User' | translate}}</span>
-      </small>
+      
       <h4 class="list-group-item-heading" >{{song.name}}<small> {{song.artist}}</small></h4>
     </a>
   </div>
