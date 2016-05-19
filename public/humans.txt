@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Oier Bravo Urtasun -- Developer -- @oierbravo
 
 # THANKS
 
@@ -13,3 +13,5 @@
 
     HTML5, CSS3
     jQuery, Modernizr
+    Nodejs, AngularJs
+    Bootstrap, MongoDB
