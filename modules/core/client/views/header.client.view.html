@@ -56,11 +56,11 @@
       <li class="dropdown" uib-dropdown>
         <a class="dropdown-toggle" uib-dropdown-toggle role="button">
           
-          <span ng-bind="currentLanguage"></span> <b class="caret"></b>
+          <span>Language({{currentLanguage}})</span> <b class="caret"></b>
         </a>
         <ul class="dropdown-menu" role="menu">
           <li ng-repeat="item in languages">
-            <a ng-click="changeLanguage(item)" ng-bind="item"></a>
+            <a ng-click="changeLanguage(item)" ng-bind="item" ng-class="active:item = currentLanguage"></a>
           </li>
           
         </ul>
