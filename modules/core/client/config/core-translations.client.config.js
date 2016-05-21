@@ -14,6 +14,22 @@
    // console.log($translateProvider);
      $translateProvider.translations('eu', {
       'TITLE': 'Kaixo'
+     /* ,'SIGN_UP':
+      'SIGN_IN':
+      'USERNAME':
+      'PASSWORD':
+      'FORGOT_YOUR_PASSWORD?':
+      'SIGN_IN_USING_YOUR_SOCIAL_ACCOUNTS':
+      'OR_WITH_YOUR_ACCOUNT':
+      'OR':
+      'FIRST_NAME':
+      'LAST_NAME':
+      'EMAIL':
+      'USERNAME':
+      'PASSWORD':
+      'PASSWORD_REQUIRIMENTS'*/
+
+
     });
      $translateProvider.preferredLanguage('eu');
      $translateProvider.useSanitizeValueStrategy('escape');
