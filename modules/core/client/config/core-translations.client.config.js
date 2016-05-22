@@ -14,20 +14,20 @@
    // console.log($translateProvider);
      $translateProvider.translations('eu', {
       'TITLE': 'Kaixo'
-     /* ,'SIGN_UP':
-      'SIGN_IN':
-      'USERNAME':
-      'PASSWORD':
-      'FORGOT_YOUR_PASSWORD?':
-      'SIGN_IN_USING_YOUR_SOCIAL_ACCOUNTS':
-      'OR_WITH_YOUR_ACCOUNT':
-      'OR':
-      'FIRST_NAME':
-      'LAST_NAME':
-      'EMAIL':
-      'USERNAME':
-      'PASSWORD':
-      'PASSWORD_REQUIRIMENTS'*/
+      ,'SIGN_UP': 'Kontu berria sortu',
+      'SIGN_IN': 'Sartu',
+      'USERNAME': 'Erabiltzailea',
+      'PASSWORD': 'Pasahitza',
+      'FORGOT_YOUR_PASSWORD?': 'Pasahitza ahaztu duzu?',
+      'SIGN_IN_USING_YOUR_SOCIAL_ACCOUNTS': 'Sartu zure sareetako kontuarekin',
+      'OR_WITH_YOUR_ACCOUNT': ' edo zure kontuarekin',
+      'OR': 'edo',
+      'FIRST_NAME': 'Izena',
+      'LAST_NAME': 'Abizena',
+      'EMAIL': 'Posta elektronikoa',
+      'PASSWORD_REQUIRIMENTS': 'Pasahitzaren ezaugarriak',
+
+      'SONG_BOOK':'Abesti liburua'
 
 
     });

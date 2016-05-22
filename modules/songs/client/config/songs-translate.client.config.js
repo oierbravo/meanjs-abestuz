@@ -23,7 +23,10 @@
       'CREATE': 'Gorde',
       'UPDATE': 'Eguneratu',
       'NEW_SONG': 'Abesti berria',
-      'EDIT_SONG': 'Abestia editatu'
+      'EDIT_SONG': 'Abestia editatu',
+      'NO_SONGS_YET': 'Abestirik ez',
+      'CREATE_ONE': 'Sortu berria',
+      'VIDEO': 'Bideoa'
       
     });
       $translateProvider.translations('es', {
@@ -37,7 +40,10 @@
       'CREATE': 'Guardar',
       'UPDATE': 'Actualizar',
       'NEW_SONG': 'Nueva cancion',
-      'EDIT_SONG': 'Editar cancion'
+      'EDIT_SONG': 'Editar cancion',
+      'NO_SONGS_YET': 'Abestirik ez',
+      'CREATE_ONE': 'Sortu berria',
+      'VIDEO': 'Video'
       
     });
   //   $translateProvider.preferredLanguage('en');

@@ -10,7 +10,7 @@
       <h4 class="list-group-item-heading" >{{song.name}}<small> {{song.artist}}</small></h4>
     </a>
   </div>
-  <div class="alert alert-warning text-center" data-ng-if="vm.songs.$resolved && !vm.songs.length">
-    No Songs yet, why don't you <a data-ui-sref="songs.create">create one</a>?
+  <div class="alert alert-warning text-center" data-ng-if="vm.songs.$resolved && !vm.songs.length" translate>
+    NO_SONGS_YET <a data-ui-sref="songs.create" translate>CREATE_ONE</a>?
   </div>
 </section>

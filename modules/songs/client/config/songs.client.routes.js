@@ -20,7 +20,7 @@
         controller: 'SongsListController',
         controllerAs: 'vm',
         data: {
-          pageTitle: 'Songs List'
+          pageTitle: 'SONGS_LIST'
         }
       })
       .state('songs.create', {
@@ -33,7 +33,7 @@
         },
         data: {
           roles: ['user', 'admin'],
-          pageTitle : 'Songs Create'
+          pageTitle : 'SONGS_CREATE'
         }
       })
       .state('songs.edit', {
@@ -46,7 +46,7 @@
         },
         data: {
           roles: ['user', 'admin'],
-          pageTitle: 'Edit Song {{ songResolve.name }}'
+          pageTitle: 'EDIT_SONG {{ songResolve.name }}'
         }
       })
       .state('songs.view', {
@@ -58,7 +58,7 @@
           songResolve: getSong
         },
         data:{
-          pageTitle: 'Song {{ articleResolve.name }}'
+          pageTitle: 'SONG {{ articleResolve.name }}'
         }
       });
   }

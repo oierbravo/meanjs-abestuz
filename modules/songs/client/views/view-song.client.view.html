@@ -15,8 +15,14 @@
       <i class="glyphicon glyphicon-trash"></i>
     </a>
   </div>
- <p class="text-success" data-ng-bind="vm.song.chords"></p>
+  <h3 translate>LYRICS</h3>
  <p  data-ng-bind="vm.song.lyrics"></p>
+ <div>
+ <h3 translate>CHORDS</h3>
+ <p class="text-success" data-ng-bind="vm.song.chords"></p>
+ </div>
+ <div>
+ <h3 translate>VIDEO</h3>
  <ng-youtube-embed 
     url="vm.song.video" 
     
@@ -25,6 +31,7 @@
     end="20"
     ng-show="vm.song.video">
 </ng-youtube-embed>
+</div>
   <small>
     <em class="text-muted">
       Posted on
